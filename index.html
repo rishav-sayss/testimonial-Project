@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>STORNG-PASSWORD</title>
+</head>
+
+<body>
+    <div class="contener">
+        <h1>PASSWORD GANERATOR </h1>
+        <div class="dispaly-contener">
+            <input readonly placeholder="PASSWORD" class="dispaly-password ">
+
+            <button class="copy-button">
+                <span class="data-copy-massage"></span>
+                <img src="copy-solid.svg" alt="" width="23" height="21">
+            </button>
+
+        </div>
+
+        <div class="input-contener">
+            <div class="Length-contener">
+                <p>Password Length</p>
+                <p class="data-length-number">
+                    0 </p>
+            </div>
+
+            <div class="slide-conterner">
+                <input type="range" min="1" max="20" class="slider">
+            </div>
+
+            <div class="check">
+                <input type="checkbox" class="Upper-case">
+                <label for="Upper-cae">Includes UpperCase Latter</label>
+            </div>
+
+            <div class="check">
+                <input type="checkbox" class="Lower-case">
+                <label for="Lower-case">Includes Lower-case</label>
+            </div>
+
+            <div class="check">
+                <input type="checkbox" class="symbols">
+                <label for="symbols">Includes symbols</label>
+            </div>
+
+            <div class="check">
+                <input type="checkbox" class="numbers">
+                <label for="numbers">Includes numbers Latter</label>
+            </div>
+
+            <div class="Strength-contener">
+                <p>Strength</p>
+                <div class="data-indicater"> </div>
+            </div>
+            <button class="generate-button">
+                GANERATE PASSWORD
+            </button>
+        </div>
+
+</body>
+<script src="index.js"></script>
+
+</html>

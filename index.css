@@ -1,0 +1,213 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.contener{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background:#720e9e;
+
+}
+ 
+h1{
+    color: white;
+    opacity: 0.75;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    line-height: 1.2;
+    
+}
+
+.dispaly-contener{
+    background: #4B0082;
+    position: relative;
+    border-radius: 0.5rem;
+    border-bottom: 0.35rem solid #EE82EE;
+    padding:0.40rem;
+    margin: 1rem 0;
+}
+.dispaly-password{
+ width: 100%;
+ background-color: transparent; 
+ padding: 1.15rem 1rem;
+ font-weight: 600px;
+ color: yellow;line-height: 30px;
+ font-size: 1.5rem;
+ letter-spacing: 1px;
+ padding-right: 3.25rem;
+ border: none;
+}
+.dispaly-password::placeholder{
+   position: absolute;
+   line-height:30px ;
+   color: yellow;
+   opacity: 0.5rem;
+    transform: translatey(-50%);
+   top: 50%;
+   left: 1.5rem;
+   font-size: 1.5rem;
+}
+.dispaly-contener button{
+    position: absolute;
+    top:50%;
+    right: 1.5rem;
+    transform: translatey(-50%);
+}
+
+.input-contener{
+    width: 400px;
+    background:#4B0082;
+    border-radius: 1rem;
+    line-height: 1.5rem;
+    padding: 2rem;
+    border-bottom: 0.35rem solid #EE82EE;
+}
+
+.Length-contener{
+    display: flex;
+    justify-content: space-between;
+    line-height: 2rem;
+    align-items: center;
+
+}
+.Length-contener p:nth-child(1){
+    color: aliceblue;
+    font-weight: 1.5rem;
+    font-size: 1.5rem;
+}
+.Length-contener p:nth-child(2){
+    color: yellow;
+    font-weight: 1.5rem;
+    font-size: 1.5rem;
+}
+.Strength-contener{
+      display: flex;
+    justify-content: space-between;
+    font-weight: 1.5rem;
+    font-size: 1.5rem;
+    margin-top: 1.75rem;
+    margin-bottom: 2rem;
+}
+.Strength-contener p{
+    color: white;
+    font-size: 2rem;
+}
+.data-indicater{
+     width: 1.5rem;
+     height: 1.5rem;
+    border-radius: 50%;
+
+}
+.generate-button{
+    width: 100%;
+    background-color: #FF00FF;
+    cursor: pointer;
+    border-bottom: 0.35rem solid#FFC72C; 
+    padding: 1rem 0;
+    text-align: center;
+    border-radius: .75rem;
+    letter-spacing: 1px;
+    margin-bottom: 2rem;
+    /* border: none; */
+    color: yellow;
+    font-weight: 600px;
+    font-size: 1.25rem;
+}
+.check{
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+    gap: 0 1.5rem;
+}
+.check input{
+    appearance: none;
+    width: 30px;
+    height: 20px;
+    border: 1px solid blueviolet;
+    cursor: pointer;
+    position: relative;
+    border-radius: 0.35rem;
+
+}
+.copy-button{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: wheat;
+}
+.check input:checked{
+    background-color: rgb(8, 250, 250);
+}
+.check input:checked::before{
+    content: "✔️";
+    position: absolute;
+    color: aquamarine;
+    font-weight: 600px;
+    font-size: 1.05rem;
+     bottom: 10%;
+     left: 0.1rem;   
+}
+.check label{
+    color: white;
+    font-size:1.25rem;
+    letter-spacing: 0.75px; 
+}
+.slider{
+    appearance: none;
+    width: 100%;
+    cursor: pointer;
+    background-color: #EE82EE;
+    border-radius: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+    border: none;
+    outline: none;
+    background-color:#ff00ff;
+}
+
+.slider::-webkit-slider-thumb{
+    position: relative;
+    appearance: none;
+    height: 2rem;
+    background-color: rgba(250, 250, 20, 0.935);
+    transition: all 100ms ease-in;
+    margin: -3px;
+    box-shadow: 0px 0px 20px 0px yellow;
+    border-radius: 50%;
+    width: 2rem;
+    cursor: pointer;
+}
+.slider:focus{
+    outline: 3px solid yellow;
+}
+.slider::-webkit-slider-thumb:hover{
+    outline: 2px solid yellow;
+    background-color:#720e9e;
+    box-shadow: 0px 0px 25px 5px #4B0082;
+}
+.data-copy-massage{
+    position: absolute;
+    /* background: violet; */
+    color: #FFC72C;
+    font-size: 1.25rem;
+    top: -35px;
+    left: -25px;
+     padding: 5px 10px; 
+    border-radius: 1rem;
+    opacity: 0;
+    transform: scale(0); 
+    transform-origin: bottom;
+     transition: all 250ms ease-in-out  
+}
+.data-copy-massage.active{
+    opacity: 1;
+    transform: scale(1);
+}
